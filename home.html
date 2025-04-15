@@ -1,0 +1,217 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title> My Portfolio</title>
+    <style>
+         :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --nav-color: #f1f1f1;
+        }
+        
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: white;
+            --nav-color: #1f1f1f;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        
+        nav {
+            background: lightblue;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            color: black;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            font-size: 17px;
+        }
+        
+        nav ul li {
+            cursor: pointer;
+        }
+        
+        .profile {
+            text-align: center;
+            margin-top: 50px;
+            line-height: 1;
+        }
+        
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid lightblue;
+        }
+        
+        .toggle-theme {
+            cursor: pointer;
+            padding: 5px 30px;
+            background: rgb(113, 208, 240);
+            border: none;
+            color: black;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        section {
+            padding: 60px 20px;
+            text-align: left;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        
+        footer {
+            background: lightblue;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .resume-button {
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background-color: lightblue;
+            color: black;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .resume-button:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body data-theme="light">
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="toggle-theme" onclick="toggleTheme()">Dark Mode</button>
+    </nav>
+
+    <section id="home" class="profile">
+        <img src="your-photo.jpg" alt="Divya's Photo">
+        <h1>Divya</h1>
+        <p>Software Tester | Problem Solver</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Divya, and I am a motivated and detail-oriented Manual Tester with a strong understanding of software testing concepts, SDLC, and STLC. I have always been passionate about technology and ensuring that software functions as expected.
+            During my studies in Computer Science, I developed an interest in software development processes, and I realized that quality assurance plays a crucial role in delivering reliable applications. Software testing excites me because it allows
+            me to analyze software from a user’s perspective, identify defects, and ensure a seamless user experience. I enjoy problem-solving, thinking critically, and paying close attention to details—skills that are essential in testing. Moreover,
+            software testing is an ever-evolving field with different methodologies, tools, and automation opportunities, which makes it dynamic and challenging. I see a great career path in testing, where I can start as a Manual Tester i love digging
+            into software to find bugs and improve quality. While my current focus is manual testing, I’m actively learning automation tools like Selenium to level up my skills. I’m always curious and eager to learn more about different testing strategies,
+            tools, and technologies to become a better QA engineer. With my knowledge of manual testing, test case design, defect tracking, and tools like JIRA, I am eager to contribute to a team where I can apply my skills, learn continuously, and help
+            deliver high-quality software.
+            <br>
+            <a href="resume.pdf" download>
+                <button class="resume-button">📄 Resume</button>
+            </a>
+
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <p>
+            <list> ⦁ Manual Testing, Test Case Design, Defect Tracking, Test Execution<br> ⦁ Testing Tools: JIRA, Bugzilla (basic knowledge)<br> ⦁ Methodologies: Agile, Waterfall, Spiral, V-model<br> ⦁ SDLC & STLC Knowledge<br> ⦁ Operating Systems: Windows,
+                Linux (basic knowledge)<br> ⦁ Microsoft Office: Excel, Word<br> ⦁ Basics of java and Web technology
+            </list>
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <p> <strong>Healthy eats</strong> <br><br>As part of my academic experience, I worked on a project food ordering website called Healthy eats , My responsibilities included designing test cases, executing them, reporting bugs, and documenting test
+            results using JIRA. This experience helped me gain hands-on exposure to testing processes in a real-world scenario.
+        </p>
+        <p><strong>Personal Portfolio </strong><br><br>The main objective of this project was to design and develop a responsive and user-friendly website that showcases my personal and academic background, projects, certifications, and contact details.
+            The idea was to build a professional online presence that I could share with potential employers and use as part of my job search in the software testing field.
+        </p>
+        <p><strong>OpenCart</strong><br><br>Performed manual testing on the OpenCart e-commerce platform. Designed and executed test cases for various modules like product listing, cart, and checkout. Logged defects using JIRA and tracked them to closure.</p>
+        <p> <strong>keep-practicing</strong><br><br>I’m a self-learned and highly motivated individual, so I focused on gaining hands-on experience through consistent practice. I’ve worked extensively on writing test cases and test scenarios to strengthen
+            my understanding of different testing techniques. I also understand the importance of documentation in testing, so I’ve made it a point to create clear and professional testing documents—like test case templates, defect reports, and test summary
+            reports. To apply my skills practically, I’ve tested several open-source and dummy applications, which helped me get a feel for real-world testing workflows and bug tracking. These exercises have really helped me build confidence and improve
+            the quality of my testing skills.
+
+        </p>
+
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Shipping Assistant at Lotus Enterprises Limited – 8 Months<br><br>I have 8 months of working experience as a Shipping Assistant at Lotus Enterprises Limited. While this role was not directly related to testing, it strengthened my attention to
+            detail, documentation skills, and ability to work in a structured environment .
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📧Email: Divyadillibabu50@gmail.com
+            <br> 📱Phone: +91 9626643678
+            <br>🔗 LinkedIn:
+            <a href="www.linkedin.com/in/divya-dillibabu-5b6368352" target="_blank">Divya Dillbabu</a>
+            <br>💻GitHub:
+            <a href="https://github.com/yourgithub" target="_blank">Divya Dillibabu</a>
+
+
+        </p>
+    </section>
+
+    <footer>
+        Behind every flawless user experience is a tester who refused to let bugs win.
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const isDark = body.getAttribute('data-theme') === 'dark';
+            body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            document.querySelector('.toggle-theme').textContent = isDark ? 'Dark Mode' : 'Light Mode';
+        }
+    </script>
+</body>
+
+</html>
