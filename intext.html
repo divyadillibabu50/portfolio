@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya-Software Tester Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <header id="main-header" class="hidden">
+        <nav>
+            <ul>
+                <li onclick="navigateTo('home')">Home</li>
+                <li onclick="navigateTo('about')">About Me</li>
+                <li onclick="navigateTo('skills')">Technical Skills</li>
+                <li onclick="navigateTo('projects')">Projects</li>
+                <li onclick="navigateTo('education')">Education</li>
+                <li onclick="navigateTo('softskills')">Soft Skills</li>
+                <li onclick="navigateTo('contact')">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <section id="landing" class="section landing">
+        <div class="landing-content">
+            <img src="laptop-flower.png" alt="Laptop with Flowers" class="landing-image">
+            <h1>Welcome to My Portfolio</h1>
+            <button onclick="navigateTo('home')">Explore</button>
+        </div>
+    </section>
+
+    <!-- Navigation Bar (Fixed on all pages except Landing) -->
+    <!-- Home Page -->
+    <section id="home" class="section hidden">
+        <div class="profile">
+            <img src="your-photo.jpg" alt="D. Divya" class="profile-pic">
+            <h2>Divya</h2>
+            <p>Manual and Automation Tester(Java + Selenium)</p>
+
+        </div>
+    </section>
+
+
+    <!-- About Me -->
+    <section id="about" class="section hidden">
+        <img src="software-about.png" class="section-icon" alt="Software Icon">
+        <h2>About Me</h2>
+        <p>I am a passionate and enthusiastic software tester with a strong background in Manual Testing and hands-on experience in Java Selenium Automation. I am a curious problem-solver, a dedicated self-learner, and always eager to expand my knowledge
+            beyond just manual and automation testing. My goal is to master all areas related to software testing and test management tools. I believe in continuous learning and adaptability as the keys to staying relevant in the ever-evolving tech landscape.
+            With a team-player mindset and a strong focus on quality, I am committed to contributing meaningfully to every project I am part of. I'm open to learning, experimenting, and growing in every phase of my QA journey.</p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="section hidden">
+        <img src="skills-icon.png" class="section-icon" alt="Skills Icon">
+        <h2>Technical Skills</h2>
+        <ul>
+            <h3>🔹 Manual Testing</h3>
+            <ul>
+                <li>Test case design and execution</li>
+                <li>Defect reporting and tracking</li>
+                <li>Functional, Integration, Regression, and Smoke Testing</li>
+                <li>SDLC, STLC, Agile, Waterfall, and V-Model methodologies</li>
+                <li>Bug tracking tools: JIRA, Bugzilla</li>
+                <h3>🔹 Automation Testing (Java + Selenium)</h3>
+                <ul>
+                    <li>Selenium WebDriver with Java</li>
+                    <li>TestNG for test execution</li>
+                    <li>Maven for project management</li>
+                    <li>Locators and XPath strategies</li>
+                    <li>WebElement handling (Dropdowns, Alerts, Frames, etc.)</li>
+                    <li>Page Object Model (POM) basics</li>
+                    <h3>🔹 Other Tools & Technologies</h3>
+                    <ul>
+                        <li>Basic SQL for database validation</li>
+                        <li>Git & GitHub for version control</li>
+                        <li>Operating Systems: Windows, Linux</li>
+                        <li>Microsoft Office Suite</li>
+                    </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section hidden">
+        <img src="project-icon.png" class="section-icon" alt="Project Icon">
+        <h2>Projects</h2>
+        <p>Project 1: E-commerce Website (Manual Testing)</p>
+        <a href="DemoBlaze_Project.zip" target="_blank">
+            <button style="background-color: #C7B8EA; color: black; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer;">
+              View Document
+            </button>
+        </a>
+
+        <p>Project 2: Login Automation (Selenium Java)</p>
+        <a href="LoginautomationDocument.docx" target="_blank">
+            <button style="background-color: #C7B8EA; color: black; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer;">
+              View 
+            </button>
+        </a>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section hidden">
+        <img src="education-icon.png" class="section-icon" alt="Education Icon">
+        <h2>Education</h2>
+        <p>Bsc-computer science – Sankara arts & science college, 2020</p>
+    </section>
+
+    <!-- Soft Skills -->
+    <section id="softskills" class="section hidden">
+        <img src="softskills-icon.png" class="section-icon" alt="Soft Skills Icon">
+        <h2>Soft Skills</h2>
+        <ul>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Time Management</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section hidden">
+        <img src="contact-icon.png" class="section-icon" alt="Contact Icon">
+        <h2>Contact</h2>
+        <p>📧Email: Divyadillibabu50@gmail.com</p>
+        <p>🔗LinkedIn: https://www.linkedin.com/in/divya-dillibabu-5b6368352/</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        🕵️‍♀️ "A tester is the user’s voice before the user speaks.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

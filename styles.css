@@ -1,0 +1,224 @@
+/* Reset and base styles */
+
+header {
+    /*sposition: fixed;*/
+    top: 0;
+    width: 100%;
+    /*background-color: #7f57d4;*/
+    z-index: 999;
+    padding: 6px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #C7B8EA;
+    border-radius: 51px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+    background-color: #877bc1;
+}
+
+
+/* Give sections space to avoid hiding under the fixed nav */
+
+.section {
+    padding: 100px 20px 60px;
+}
+
+* {
+    /*margin: 0;*/
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(206, 194, 224);
+    color: black;
+    line-height: 1.9;
+}
+
+.section {
+    padding: 60px 20px;
+    display: none;
+    text-align: center;
+}
+
+.section img.section-icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.section p,
+.section ul {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(206, 194, 224);
+    text-align: center;
+}
+
+.landing-image {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.landing h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.landing button {
+    background-color: #978ad1;
+    color: black;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.landing button:hover {
+    background-color: rgb(206, 194, 224);
+}
+
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #a48dd9;
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #a48dd9;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+    background-color: #b87bc4;
+}
+
+
+/* Profile section */
+
+.profile {
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #C7B8EA;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+/* Buttons for documents */
+
+button {
+    background-color: #C7B8EA;
+    color: black;
+    padding: 10px 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #C7B8EA;
+}
+
+#skills {
+    padding: 20px;
+    background-color: rgb(206, 194, 224);
+    /* cream tone */
+    border-radius: 12px;
+}
+
+#skills h2 {
+    font-size: 28px;
+    color: black;
+    /* brown tone */
+    margin-bottom: 16px;
+}
+
+
+/* Fade-in animation */
+
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #a48dd9;
+    color: black;
+    text-align: center;
+    /*padding: 15px 10px;*/
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
